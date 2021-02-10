@@ -11,8 +11,8 @@ audio[controls],canvas,video {display: inline-block; *display: inline; zoom: 1}
 
 /* BASE */
 html {height: 100%; font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%} /* Force scrollbar in non-IE and Remove iOS text size adjust without disabling user zoom */
-body {margin: 0; min-height: 100%; -webkit-font-smoothing:antialiased; font-smoothing:antialiased; text-rendering:optimizeLegibility;color: #666} /* Improve default text rendering, handling of kerning pairs and ligatures */
-
+body {margin: 0; min-height: 100%; -webkit-font-smoothing:antialiased; font:antialiased; text-rendering:optimizeLegibility;color: #666} /* Improve default text rendering, handling of kerning pairs and ligatures */
+f
 /* DEFAULT FONT SETTINGS */
 /* 16px base font size with 150% (24px) friendly, unitless line height and margin for vertical rhythm */
 /* Font-size percentage is based on 16px browser default size */
@@ -39,7 +39,7 @@ pre, code, kbd, samp {font-size: 1em; line-height: 1.5em; margin-bottom: 1.5em; 
 /* TABLES */
 table {border-collapse: collapse;border-spacing: 0;margin-bottom: 1.5em;display: flex;margin-left: 105px;}
 th {text-align: left}
-th,{padding: 800px; border-bottom: 0 solid #333}
+
 
 /* FORMS */
 form {margin: 0}
@@ -545,7 +545,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   display: none;
 }
 
-@-webkit-keyframes move {
+@keyframes move {
   0% {
    background-position: 0 0;
  }
@@ -579,7 +579,7 @@ body {width: 92%; margin: 0 auto} /* Center page without wrapper */
   background-color: #7f8c8d;
 }
 .nostripes > span > span, .nostripes > span:after {
-  -webkit-animation: none;
+  
   background-image: none;
 }
 /* Footer */
@@ -607,48 +607,21 @@ Change widths as necessary
 ------------------------------------------- */
 
 /* MOBILE PORTRAIT */
-@media only screen and (min-width: 320px) {
-  body {
 
-  }
-}
-
-/* MOBILE LANDSCAPE */
-@media only screen and (min-width: 480px) {
-  body {
-
-  }
-}
-
-/* SMALL TABLET */
-@media only screen and (min-width: 600px) {
-  body {
-
-  }
   .etabs >li span{
     display: block;
   }
-}
+
 
 /* TABLET/NETBOOK */
-@media only screen and (min-width: 768px) {
-  body {
 
-  }
 
   /* Sidebar */
   .sidebar{
    padding-left: 20px;
    border-left: 1px solid #f1f1f1;
  }
- /* COLUMN GRID */
- .g1,.g2,.g3 {display:inline; float: left}
-
- /* 2 COLUMN GRID */
- .g1 {width:48.0%}
- .g2 {width:48.0%}
- .g3 {width:98.0%}
-}
+ 
 
 
 /* progress bar */
@@ -703,10 +676,7 @@ Change widths as necessary
 
 
 /* LANDSCAPE TABLET/NETBOOK/LAPTOP */
-@media only screen and (min-width: 1024px) {
-  body {
 
-  }
   .etabs >li span{
     display: inline;
   }
@@ -724,20 +694,8 @@ Change widths as necessary
   .g1 {width:31.333%}
   .g2 {width:64.667%;}
   .g3 {width:98.0%}
-}
 
-@media only screen and (min-width: 1280px) {
-  /* DESKTOP */
-  body {
 
-  }
-}
-
-/* WIDESCREEN */
-/* Increased body size for legibility */
-@media only screen and (min-width: 1400px) {
-  body {} /* 18.5px / 28px */
-}
 
 
 /* PRINT */
